@@ -3,7 +3,7 @@ import Card from './Card'
 import check from '../images/Check.png'
 import gift from '../images/Gift.png'
 import truck from '../images/Truck.png'
-import background from '../images/backgroundcafecards.jpeg'
+// import background from '../images/backgroundcafecards.jpeg'
 
 
 

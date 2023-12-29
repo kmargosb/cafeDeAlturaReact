@@ -4,6 +4,7 @@ import check from '../images/Check.png'
 import gift from '../images/Gift.png'
 import truck from '../images/Truck.png'
 // import background from '../images/backgroundcafecards.jpeg'
+import './SectionCss/SectionCards.css';
 
 
 
@@ -21,19 +22,19 @@ const SectionCards = () => {
         },
         {
             textH3: "Descuentos y beneficios",
-            textP: "",
+            textP: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam maxime vel earum sint numquam, quia debitis tenetur neque",
             imagenSvg: `${truck}`
         }
     ];
 
     return (
-        <div className='flex flex-col gap-6 items-center w-full py-12 px-[147px] bg-red-200'>
+        <div className='flex flex-col gap-6 items-center w-full py-12 px-[147px] sectionBg'>
             <h2 className='text-white font-medium text-[24px] leading-7'>Café con las mejores condiciones</h2>
             <div className='flex gap-6 w-[996px]'>
                 
             {dataCards.map((data, i) => {
                 return (
-                    <Card key={i} textH3={data.textH3} textP={data.textP} imagenSvg={data.imagenSvg} />
+                    <Card key={i} textH3={data.textH3} textP={data.textP} imagenSvg={data.imagenSvg}/>
                 )
             })}
             </div>

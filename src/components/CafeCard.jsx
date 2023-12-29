@@ -7,9 +7,9 @@ const CafeCard = ({price, name, img, id, available}) => {
             <img src={img} alt={name} />
             <div className='flex flex-col gap-3 justify-center items-center text-[14px] leading-[16px] '>
                 <p className='font-semibold'>{name}</p>
-                <p className='font-normal'>{price}</p>
+                <p className='font-normal'>{price.toFixed(2)} €</p>
             </div>
-            <Button text="Añadir" styles="flex p-2 bg-green-400 rounded text-white text-[14px] font-semibold leading-4"/>
+            <Button text="Añadir" styles="flex p-2 bg-GreenAll rounded text-white text-[14px] font-semibold leading-4"/>
         </div>
     )
 }

@@ -1,21 +1,26 @@
 import React from 'react'
-import Button from './Button'
+import cafeteria from '../images/cafeteria.jpeg'
+import { Link } from 'react-router-dom'
+import arrow from '../images/ArrowNarrowRight.png'
 
-const SectionFeature = () => {
+const SectionHero = () => {
     return (
-        <div className='font-outfit py-12 px-10 w-screen'>
-            <div>
-                <h3>De la planta a tu taza</h3>
-                <h1>El mejor café del mundo, ahora en tu casa.</h1>
-                <p></p>
-                <div className='flex gap-4'>
-                    <Button text='Descubrir orígenes' styles='py-3 px-6 bg-black text-white'/>
-                    <Button text='Comprar café' styles='py-3 px-6 bg-green-500 text-white rounded' />
+        <div className='font-outfit bg-OffWhite pt-[44.6px] pb-[45.4px] px-10 w-full flex justify-center'>
+            <div className='flex justify-between items-center gap-6 w-full'>
+                <div className='flex flex-col gap-4 w-[457px] justify-center items-start'>
+                    <h3 className='text-[24px] text-GreenAll font-medium leading-7'>Pruébalo en nuestro coffee shop</h3>
+                    <p className='text-[14px] text-BlackP leading-4'>
+                        Trabajamos con agricultores de todo el mundo para seleccionar los mejores granos de café y que puedas viajar desde la comodidad de tu hogar.
+                    </p>
+                    <Link to="/shop" className='flex gap-4 items-center justify-center'>
+                        <p className='text-[14px] font-semibold'>Cómo llegar</p>
+                        <img src={arrow} alt="icon" />
+                    </Link>
                 </div>
+                <img src={cafeteria} alt="cafe" className='h-[390px] rounded-[20px] ' />
             </div>
-            <img src="" alt="" />
         </div>
     )
 }
 
-export default SectionFeature
+export default SectionHero

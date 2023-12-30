@@ -4,7 +4,7 @@ import Button from './Button'
 
 const NavBar = () => {
     return (
-        <div className='font-outfit flex py-3 px-10 justify-between items-center text-white bg-black w-screen'>
+        <div className='font-outfit flex py-3 px-10 justify-between items-center text-white bg-black w-full'>
             <Link to="/" className='flex gap-2 items-center'>
                 <h2 className='text-[23px] leading-[35px]'>cafedealtura.com</h2>
                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="25" viewBox="0 0 21 26" fill="none">

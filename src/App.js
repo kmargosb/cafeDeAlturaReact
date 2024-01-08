@@ -3,6 +3,7 @@ import NavBar from './components/NavBar';
 import Home from './pages/Home';
 import Shop from './pages/Shop';
 import BagShop from './pages/BagShop';
+import FooterCopyRight from './components/FooterCopyRight'
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route path="/shop" element={<Shop />} />
         <Route path="/bagshop" element={<BagShop />} />
       </Routes>
+      <FooterCopyRight/>
     </BrowserRouter>
   );
 }

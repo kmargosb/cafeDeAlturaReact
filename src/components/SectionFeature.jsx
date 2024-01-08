@@ -13,7 +13,7 @@ const SectionHero = () => {
                         Trabajamos con agricultores de todo el mundo para seleccionar los mejores granos de café y que puedas viajar desde la comodidad de tu hogar.
                     </p>
                     <Link to="/shop" className='flex gap-4 items-center justify-center'>
-                        <p className='text-[14px] font-semibold'>Cómo llegar</p>
+                        <p className='text-[14px] font-semibold border-b border-black'>Cómo llegar</p>
                         <img src={arrow} alt="icon" />
                     </Link>
                 </div>

@@ -37,7 +37,7 @@ const SectionCafeCards = () => {
                 })}
             </div>
             <Link to="/shop" className='flex gap-4 items-center justify-center'>
-                <p className='text-[14px] font-semibold'>Ver todos</p>
+                <p className='text-[14px] font-semibold border-b border-black'>Ver todos</p>
                 <img src={arrow} alt="icon" />
             </Link>
         </div>

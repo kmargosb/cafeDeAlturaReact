@@ -28,7 +28,7 @@ const SectionFaq = () => {
                 </div>
             </div>
             <Link to='' className='flex gap-4 text-white'>
-                <p className='text-[14px] font-semibold'>Resolvemos tus dudas</p>
+                <p className='text-[14px] font-semibold border-b border-white'>Resolvemos tus dudas</p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 25" fill="none">
                     <path d="M17 8.39258L21 12.3926M21 12.3926L17 16.3926M21 12.3926L3 12.3926" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>

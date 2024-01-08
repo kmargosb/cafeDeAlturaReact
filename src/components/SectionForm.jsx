@@ -49,7 +49,7 @@ const SectionForm = () => {
                         </div>
                         <p className='h-6'>
                             ¿Buscas un trabajo?
-                            <Link href="" className='font-semibold leading-4 text-[14px] text-BlackP'> Ver nuestras ofertas.</Link>
+                            <Link href="" className='font-semibold leading-4 text-[14px] text-BlackP border-b border-BlackP'> Ver nuestras ofertas.</Link>
                         </p>
                     </div>
                 </div>
@@ -83,8 +83,8 @@ const SectionForm = () => {
                         <div className='flex gap-3 h-5'>
                             <input type="checkbox" name="check" id="check" className='w-4 h-4' />
                             <p className='text-gray-700 text-[14px] leading-4'>
-                                Acepto la <Link className='font-semibold'>Política de privacidad </Link>
-                                y los <Link className='font-semibold'>Términos y condiciones.</Link>
+                                Acepto la <Link className='font-semibold border-b border-gray-700'>Política de privacidad </Link>
+                                y los <Link className='font-semibold border-b border-gray-700'>Términos y condiciones.</Link>
                             </p>
                         </div>
                         <Button text='Enviar' styles='text-white py-3 px-6 bg-GreenAll border-none rounded-[4px] text-[14px] leading-4 font-semibold' />

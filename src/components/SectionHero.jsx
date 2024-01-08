@@ -11,7 +11,7 @@ const SectionHero = () => {
                     <h1 className='text-[40px] font-semibold leading-[44px]'>El mejor café del mundo, ahora en tu casa.</h1>
                     <p className='text-[14px] text-BlackP leading-4'>Trabajamos con agricultores de todo el mundo para seleccionar los mejores granos de café y que puedas viajar desde la comodidad de tu hogar.</p>
                     <div className='flex gap-4'>
-                        <Button text='Descubrir orígenes' styles='py-3 px-6 bg-black text-white rounded' />
+                        <Button text='Descubrir orígenes' styles='py-3 px-6 bg-Black text-white rounded' />
                         <Button text='Comprar café' styles='py-3 px-6 bg-GreenAll text-white rounded ' />
                     </div>
                 </div>

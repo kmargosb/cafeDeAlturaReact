@@ -4,7 +4,7 @@ import Button from './Button'
 
 const NavBar = () => {
     return (
-        <div className='font-outfit flex py-3 px-10 justify-between items-center text-white bg-black w-full'>
+        <div className='font-outfit flex py-3 px-10 justify-between items-center text-white bg-DarkGrey w-full'>
             <Link to="/" className='flex gap-2 items-center'>
                 <h2 className='text-[23px] leading-[35px]'>cafedealtura.com</h2>
                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="25" viewBox="0 0 21 26" fill="none">
@@ -19,11 +19,11 @@ const NavBar = () => {
                 </svg>
             </Link>
             <div className='flex gap-4 text-[14px] leading-[16px] font-semibold'>
-                <Link to="/tienda" className='p-2' >Tienda</Link>
-                <Link to="/suscripcion" className='p-2'>Suscripción</Link>
-                <Link to="/para_empresas" className='p-2'>Para empresas</Link>
-                <Link to="/sobre_nosotros" className='p-2'>Sobre nosotros</Link>
-                <Link to="/contacto" className='p-2'>Contacto</Link>
+                <Link to="/tienda" className='p-2 rounded-[10px] hover:bg-hover-nav' >Tienda</Link>
+                <Link to="/suscripcion" className='p-2 rounded-[10px] hover:bg-hover-nav'>Suscripción</Link>
+                <Link to="/para_empresas" className='p-2 rounded-[10px] hover:bg-hover-nav'>Para empresas</Link>
+                <Link to="/sobre_nosotros" className='p-2 rounded-[10px] hover:bg-hover-nav'>Sobre nosotros</Link>
+                <Link to="/contacto" className='p-2 rounded-[10px] hover:bg-hover-nav'>Contacto</Link>
             </div>
             <div className='flex justify-center items-center gap-6'>
                 <div className='flex items-center gap-2 text-[14px] leading-[16px] font-semibold'>

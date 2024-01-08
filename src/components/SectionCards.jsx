@@ -22,13 +22,13 @@ const SectionCards = () => {
         },
         {
             textH3: "Descuentos y beneficios",
-            textP: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam maxime vel earum sint numquam, quia debitis tenetur neque",
+            textP: "Cada dos meses, te regalamos una bolsa de un nuevo origen sorpresa, para que lo descubras junto a nosotros.",
             imagenSvg: `${truck}`
         }
     ];
 
     return (
-        <div className='flex flex-col gap-6 items-center w-full py-12 px-[147px] sectionBg'>
+        <div className='font-outfit flex flex-col gap-6 items-center w-full py-12 px-[147px] sectionBg'>
             <h2 className='text-white font-medium text-[24px] leading-7'>Café con las mejores condiciones</h2>
             <div className='flex gap-6 w-[996px]'>
                 

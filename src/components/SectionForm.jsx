@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Button from './Button'
 
 const SectionForm = () => {
     return (
-        <div className='flex justify-center bg-Taupe w-full'>
+        <div className='font-outfit flex justify-center bg-Taupe w-full'>
             <div className='flex justify-center items-center gap-6'>
                 <div className='flex flex-col justify-center gap-8 w-[588px]'>
                     <div className='flex flex-col w-full gap-3'>
@@ -13,17 +14,17 @@ const SectionForm = () => {
                             lo antes posible.
                         </p>
                     </div>
-                    <div className='flex flex-col gap-6'>
-                        <p className='text-[14px] leading-4 text-gray-500'>
+                    <div className='flex flex-col gap-6 text-[14px] leading-4 text-gray-500'>
+                        <p className='h-[37px]'>
                             También puedes ponerte en contacto con nostros en nuestra dirección o a través del teléfono
                             de la tienda.
                         </p>
-                        <div class="address">
-                            <p className='text-[14px] leading-4 text-gray-500'>742 Evergreen Terrace</p>
-                            <p className='text-[14px] leading-4 text-gray-500'>Springfield, OR 12345</p>
+                        <div className='text-[14px] leading-4 text-gray-500'>
+                            <p>742 Evergreen Terrace</p>
+                            <p>Springfield, OR 12345</p>
                         </div>
-                        <div class="form-left-detail">
-                            <div class="fld1 detail">
+                        <div className='flex flex-col gap-3'>
+                            <div className='flex items-center gap-3'>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 25"
                                     fill="none">
                                     <g id="Phone">
@@ -35,7 +36,7 @@ const SectionForm = () => {
                                 </svg>
                                 <p>+1 (555) 123-4567</p>
                             </div>
-                            <div class="fld2 detail">
+                            <div className='flex items-center gap-3'>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 25"
                                     fill="none">
                                     <path
@@ -46,42 +47,47 @@ const SectionForm = () => {
                                 <p>support@example.com</p>
                             </div>
                         </div>
-                        <p>¿Buscas un trabajo? <Link href="" class="ver-nuestras">Ver nuestras ofertas.</Link></p>
+                        <p className='h-6'>
+                            ¿Buscas un trabajo?
+                            <Link href="" className='font-semibold leading-4 text-[14px] text-BlackP'> Ver nuestras ofertas.</Link>
+                        </p>
                     </div>
                 </div>
-                <div class="form-right">
-                    <form action="">
-                        <div class="form-label">
-                            <label for="name" id="name" class="labels">Nombre completo</label>
-                            <input type="text" name="name" id="name" class="inputs inp"/>
+                <div className='flex justify-center items-center bg-white w-[588px] py-8 pl-12 pr-8'>
+                    <form className='flex flex-col items-start gap-6 w-[470px]'>
+                        <div className='w-full flex flex-col gap-1'>
+                            <label for="name" className='text-gray-700 text-xs'>Nombre completo</label>
+                            <input type="text" name="name" id="name" className='flex w-full h-[34px] py-[9px] px-[13px] rounded-md border border-gray-300 hover:border-hover-inp focus:border-2 focus:outline-none focus:border-focus-inp' />
                         </div>
-                        <div class="form-label">
-                            <label for="email" id="email" class="labels">Email</label>
-                            <input type="text" name="email" id="email" class="inputs inp"/>
+                        <div className='w-full flex flex-col gap-1'>
+                            <label for="email" className='text-gray-700 text-xs'>Email</label>
+                            <input type="text" name="email" id="email" className='flex w-full h-[34px] py-[9px] px-[13px] rounded-md border border-gray-300 hover:border-hover-inp focus:border-2 focus:outline-none focus:border-focus-inp' />
                         </div>
-                        <div class="form-label">
-                            <label for="telefono" id="telefono" class="labels">Teléfono</label>
-                            <div class="tel-tel">
-                                <select>
+                        <div className='w-full flex flex-col gap-1'>
+                            <label for="telefono" className='text-gray-700 text-xs'>Teléfono</label>
+                            <div className='flex'>
+                                <select className='relative left-2 bg-transparent border-none outline-none z-10'>
                                     <option value="+1">US</option>
                                     <option value="+34">ES</option>
                                     <option value="+58">VE</option>
                                 </select>
-                                <input type="text" name="telefono" id="telefono" class="tel-input inp"
-                                    placeholder="+1 (555) 987-6543"/>
+                                <input type="text" name="telefono" id="telefono" className='w-full h-[38px] py-[9px] pr-[13px] pl-[60px] rounded-md bg-transparent relative right-10 border border-gray-300 hover:border-hover-inp focus:border-2 focus:outline-none focus:border-focus-inp'
+                                    placeholder="+1 (555) 987-6543" />
                             </div>
                         </div>
-                        <label for="escribe" class="escribe"></label>
-                        <textarea name="escribe" class="inp" id="escribe" cols="60" rows="5"></textarea>
-                        <div class="form-acepto">
-                            <input type="checkbox" name="check" id="check" class="check-acepto"/>
-                                <p>
-                                    Acepto la <Link  class="a-de-acepto">Política de privacidad</Link>
-                                    y los <Link  class="a-de-acepto">Términos y condiciones.</Link>
-                                </p>
+                        <div className='flex flex-col gap-1'>
+                            <label for="escribe" className='h-[17px]'></label>
+                            <textarea className='w-full resize-y max-h-[150px] border border-gray-300 hover:border-hover-inp focus:border-2 focus:outline-none focus:border-focus-inp'
+                                name="escribe" id="escribe" cols="60" rows="5"></textarea>
                         </div>
-
-                        <button type="submit" class="btn-enviar">Enviar</button>
+                        <div className='flex gap-3 h-5'>
+                            <input type="checkbox" name="check" id="check" className='w-4 h-4' />
+                            <p className='text-gray-700 text-[14px] leading-4'>
+                                Acepto la <Link className='font-semibold'>Política de privacidad </Link>
+                                y los <Link className='font-semibold'>Términos y condiciones.</Link>
+                            </p>
+                        </div>
+                        <Button text='Enviar' styles='text-white py-3 px-6 bg-GreenAll border-none rounded-[4px] text-[14px] leading-4 font-semibold' />
                     </form>
                 </div>
             </div>

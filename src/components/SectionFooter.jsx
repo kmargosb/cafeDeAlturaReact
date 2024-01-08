@@ -49,16 +49,16 @@ const SectionFooter = () => {
                         />
                     </div>
                     <div className='flex flex-col gap-4 font-semibold leading-4 text-[14px] relative left-[45px]'>
-                        <Link to="./tienda.html">Tienda</Link>
-                        <Link to="/">Suscripción</Link>
-                        <Link to="/">Para empresas</Link>
-                        <Link to="/">Sobre nosotros</Link>
-                        <Link to="/">Contacto</Link>
+                        <Link to="/shop">Tienda</Link>
+                        <Link to="/suscription">Suscripción</Link>
+                        <Link to="/para_empresas">Para empresas</Link>
+                        <Link to="/about_us">Sobre nosotros</Link>
+                        <Link to="/contact">Contacto</Link>
                     </div>
                     <div className='flex flex-col gap-4 font-semibold leading-4 text-[14px] w-[255px] relative top-[3px] right-[77px] bottom-[69px]'>
-                        <Link to="/">Política de privacidad</Link>
-                        <Link to="/">Politica de cookies</Link>
-                        <Link to="/">Términos y condiciones</Link>
+                        <Link to="/privacy_politics">Política de privacidad</Link>
+                        <Link to="/cookies_politics">Politica de cookies</Link>
+                        <Link to="/terms">Términos y condiciones</Link>
                     </div>
                 </div>
             </div>
